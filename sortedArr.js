@@ -1,3 +1,5 @@
+// Find if an array is sorted or not.
+
 var arr = [1, 2, 3, 5, 6, 8];
 
 var sorted = function(arr,index){
