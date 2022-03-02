@@ -39,6 +39,37 @@ var findIndexLast = function(arr, target, index){
     }
 }
 
+
+// Adding the index in an array.
+var list = new Array();
+var findAllIndex = function(arr, target, index){
+    if(index == arr.length){
+        return;
+    }
+    if(arr[index] == target){
+        list.push(index);
+    }
+    findAllIndex(arr, target, index+1);
+
+}
+findAllIndex(arr, 18, 0);
+
+var list2 = new Array();
+var findAllIndex2 = function(arr, target, index, list2){
+    if(index == arr.length){
+        return list2;
+    }
+    if(arr[index] == target){
+        list2.push(index);
+    }
+    else{
+        return findAllIndex2(arr, target, index+1, list2)
+    }
+}
+
+
 console.log(find(arr, 18, 0));
 console.log(findIndex(arr, 18, 0));
 console.log(findIndexLast(arr, 18, arr.length-1));
+console.log(list);
+console.log(list2);
