@@ -25,4 +25,4 @@ var search = function(arr, target, s, e){
     }
 }
 
-console.log(search(arr, 7, 0, arr.length - 1));
+console.log(search(arr, 7, 0, arr.length-1));

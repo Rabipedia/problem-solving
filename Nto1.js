@@ -3,7 +3,7 @@ var Nto1 = function(n){
         return;
     }
     console.log(n);
-    Nto1(n - 1);
+    return Nto1(n - 1);
 }
 
 console.log(Nto1(5))
